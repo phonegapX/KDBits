@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KDBits", "KDBits\KDBits.vcproj", "{3B08676F-6830-44D0-8510-E8F96BB568DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16} = {DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxmlSTL", "tinyxml\tinyxmlSTL.vcproj", "{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "arctic", "..\arctic\arctic\arctic.vcproj", "{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libtorrent-0.13", "libtorrent-0.13\libtorrent-0.13.vcproj", "{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239} = {0CC47F56-EEBA-430C-9BF6-786F96C90239}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "libtorrent-0.13\zlib\zlib.vcproj", "{0CC47F56-EEBA-430C-9BF6-786F96C90239}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Debug|Win32.Build.0 = Debug|Win32
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Debug|x64.ActiveCfg = Debug|Win32
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Release|Win32.ActiveCfg = Release|Win32
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Release|Win32.Build.0 = Release|Win32
+		{3B08676F-6830-44D0-8510-E8F96BB568DA}.Release|x64.ActiveCfg = Release|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Debug|Win32.Build.0 = Debug|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Debug|x64.ActiveCfg = Debug|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Release|Win32.ActiveCfg = Release|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Release|Win32.Build.0 = Release|Win32
+		{DEC4F95C-6AF7-47F1-8CC3-DA02B8416D16}.Release|x64.ActiveCfg = Release|Win32
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Debug|Win32.Build.0 = Debug|Win32
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Debug|x64.ActiveCfg = Debug|x64
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Debug|x64.Build.0 = Debug|x64
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Release|Win32.ActiveCfg = Release|Win32
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Release|Win32.Build.0 = Release|Win32
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Release|x64.ActiveCfg = Release|x64
+		{4CBF67C8-A00F-48ED-BF46-A277BBEE0B76}.Release|x64.Build.0 = Release|x64
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Debug|Win32.Build.0 = Debug|Win32
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Debug|x64.ActiveCfg = Debug|Win32
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Release|Win32.ActiveCfg = Release|Win32
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Release|Win32.Build.0 = Release|Win32
+		{E0B8168C-6050-47A4-8B60-EDB4E5F4F9E2}.Release|x64.ActiveCfg = Release|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Debug|Win32.Build.0 = Debug|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Debug|x64.ActiveCfg = Debug|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Release|Win32.ActiveCfg = Release|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Release|Win32.Build.0 = Release|Win32
+		{0CC47F56-EEBA-430C-9BF6-786F96C90239}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

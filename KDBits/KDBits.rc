@@ -1,0 +1,817 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\KDBits.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\KDBits.ico"
+IDR_KDBitsTYPE          ICON                    "res\\KDBitsDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_DISABLE             BITMAP                  "res\\Disabled.bmp"
+IDB_NORMAL              BITMAP                  "res\\Normal.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  48, 48
+BEGIN
+    BUTTON      ID_MAIN_MENU_NEW_TASK
+    BUTTON      ID_MENU_DOWNLIST_START_TASK
+    SEPARATOR
+    BUTTON      ID_MENU_DOWNLIST_STOP_TASK
+    SEPARATOR
+    BUTTON      ID_MENU_DOWNLIST_DELETE_TASK
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_MAIN_MENU_CONFIG
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_APP_EXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新任务(&N)\tCtrl+N",             ID_MAIN_MENU_NEW_TASK
+        MENUITEM "重新加载游戏列表(&L)",                ID_MAIN_MENU_LOAD_GAMELIST
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "任务(&J)"
+    BEGIN
+        MENUITEM "开始任务(&S)",                    ID_MENU_DOWNLIST_START_TASK
+        MENUITEM "停止任务(&T)",                    ID_MENU_DOWNLIST_STOP_TASK
+        MENUITEM "删除任务(&D)",                    ID_MENU_DOWNLIST_DELETE_TASK
+        MENUITEM SEPARATOR
+        MENUITEM "全部开始",                        ID_MAIN_MENU_START_ALL
+        MENUITEM "全部停止",                        ID_MAIN_MENU_STOP_ALL
+        MENUITEM "全部删除",                        ID_MAIN_MENU_DELETE_ALL
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "制作种子(&M)",                    ID_MAIN_MENU_MAKEFILE
+        MENUITEM "系统配置(&P)",                    ID_MAIN_MENU_CONFIG
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 KDBits(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_RESLIST_POP MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "下载(&D)",                      ID_RES_DOWNLOAD
+        MENUITEM "属性(&R)",                      ID_RES_PROPERTY
+    END
+END
+
+IDR_MENU_DOWNLIST_POP MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "开始任务(&S)",                    ID_MENU_DOWNLIST_START_TASK
+        MENUITEM "停止任务(&T)",                    ID_MENU_DOWNLIST_STOP_TASK
+        MENUITEM "删除任务(&D)",                    ID_MENU_DOWNLIST_DELETE_TASK
+        MENUITEM SEPARATOR
+        MENUITEM "重新宣布(&A)",                    ID_MENU_DOWNLIST_ANNOUNCE_TASK
+        MENUITEM "打开文件夹(&O)",                   ID_MENU_DOWNLIST_OPEN_DIR
+        MENUITEM "种子文件另存为...",                  ID_MENU_DOWNLIST_TORRENT_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&R)",                      ID_MENU_DOWNLIST_TASK_PROPERTY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 KDBits"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,20
+    LTEXT           "KDBits 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_RESLISTPAGE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_NETGAMELIST,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,7,7,72,54
+END
+
+IDD_DIALOG_DOWNLOAD_SELECT DIALOGEX 0, 0, 280, 230
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新增下载任务"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,81,204,50,14
+    PUSHBUTTON      "取消",IDCANCEL,145,204,50,14
+    LTEXT           "存放目录：",IDC_STATIC,14,16,44,12
+    EDITTEXT        IDC_EDIT_PATH,61,14,176,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSE,243,14,23,12
+    LTEXT           "更新规则：",IDC_STATIC,14,37,44,12
+    COMBOBOX        IDC_COMBO_UPDATERULE,61,35,63,48,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "下载种子：跑跑卡丁车跑跑卡丁车",IDC_STATIC_DOWNLOADSEED,"Static",SS_SIMPLE | NOT WS_VISIBLE | WS_GROUP,14,58,115,10
+    CONTROL         "",IDC_PROGRESS_DOWNLOADSEED,"msctls_progress32",NOT WS_VISIBLE | WS_BORDER,133,57,128,10
+    CONTROL         "",IDC_LIST_DOWNLOADLIST_SELECT,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_TABSTOP,7,77,267,122
+END
+
+IDD_CONFIGNETWORK DIALOGEX 0, 0, 284, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "网络设置"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "速率设置",IDC_STATIC,8,7,256,55
+    CONTROL         "全局最大上传速度：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,22,81,10
+    EDITTEXT        IDC_UPLOADLIMIT,108,20,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_UPLOADLIMIT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,137,21,10,11
+    LTEXT           "KB/s",IDC_STATIC,166,22,50,10
+    CONTROL         "全局最大下载速度：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,43,81,10
+    EDITTEXT        IDC_DOWNLIMIT,108,41,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DOWNLIMIT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,137,41,10,11
+    LTEXT           "KB/s",IDC_STATIC,166,43,50,10
+    GROUPBOX        "常规设置",IDC_STATIC,8,69,256,71
+    CONTROL         "监听端口：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,85,40,10
+    EDITTEXT        IDC_LISTEN_PORT,108,81,57,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_LISTEN_PORT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,154,81,10,11
+    CONTROL         "启动UPnP自动端口映射(XP有效)：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,102,121,10
+    CONTROL         "           ",IDC_OPEN_UPNP_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,100,9,12
+    CONTROL         "是否加入公有DHT网络：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,120,121,10
+    CONTROL         "           ",IDC_JOIN_DHT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,120,9,12
+    GROUPBOX        "代理设置",IDC_STATIC,8,147,256,93
+    CONTROL         "代理类型：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,17,160,41,10
+    COMBOBOX        IDC_PROXY_TYPE_COMBO,63,157,62,47,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "服务器地址：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,17,179,41,10
+    EDITTEXT        IDC_PROXY_IP_EDIT,63,178,84,12,ES_AUTOHSCROLL
+    CONTROL         "端口：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,156,179,25,10
+    EDITTEXT        IDC_PROXY_PORT_EDIT,192,178,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "代理服务器是否需要验证",IDC_PROXY_IS_VALIDATE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,197,180,11
+    CONTROL         "用户名：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,17,220,41,10
+    EDITTEXT        IDC_PROXY_USERNAME_EDIT,63,218,84,12,ES_AUTOHSCROLL
+    CONTROL         "密码：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,156,221,25,10
+    EDITTEXT        IDC_PROXY_PASSWORD_EDIT,192,218,62,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_CONFIGDISK DIALOGEX 0, 0, 284, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基本设置"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "常规设置",IDC_STATIC,8,7,256,160
+    CONTROL         "下载前预先分配磁盘空间",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,22,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_PREALLOC_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,20,9,12
+    CONTROL         "删除下载任务时同时删除文件",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,40,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_DELFILE_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,38,9,12
+    CONTROL         "关联为默认BT客户端",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,58,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_DEFACLIENT_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,56,9,12
+    CONTROL         "系统启动时自动运行",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,76,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_AUTORUN_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,74,9,12
+    CONTROL         "启动时自动检查版本更新",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,94,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_CHECKUPDATE_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,92,9,12
+    CONTROL         "断点续传时重新检查数据完整性",IDC_STATIC_CHECKDATACALESUM,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,16,112,121,10
+    CONTROL         "           ",IDC_CONFIGDISK_CHECKDATACALESUM_CHECKBOX,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,110,9,12
+    CONTROL         "下载运行设置",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,130,121,10
+    COMBOBOX        IDC_CONFIGDISK_RUNSETUP_COMBO,142,128,82,32,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "最多同时进行的任务数",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,148,121,10
+    EDITTEXT        IDC_CONFIGDISK_MAXTASK_EDIT,142,146,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_CONFIGDISK_MAXTASK_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,172,146,10,11
+    GROUPBOX        "磁盘保护设置",IDC_STATIC,8,175,256,56
+    CONTROL         "当磁盘空间低于指定值时就停止下载",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,191,152,10
+    COMBOBOX        IDC_CONFIGDISK_PROTECTSIZE_COMBO,173,188,82,32,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "设置磁盘缓存大小",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,16,211,152,10
+    COMBOBOX        IDC_CONFIGDISK_DISKCACHE_COMBO,173,208,82,32,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONFIGPATH DIALOGEX 0, 0, 284, 246
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "目录设置"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "网络游戏存放目录",IDC_STATIC,8,7,256,55
+    EDITTEXT        IDC_NETGAME_PATH,15,29,217,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_NETGAME_BRW,237,29,22,12
+    GROUPBOX        "单机游戏存放目录",IDC_STATIC,8,74,256,55
+    EDITTEXT        IDC_LOCALGAME_PATH,16,96,217,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_LOCALGAME_BRW,238,96,22,12
+    GROUPBOX        "其他资源存放目录",IDC_STATIC,8,142,256,55
+    EDITTEXT        IDC_OTHER_PATH,15,163,217,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_OTHER_BRW,237,163,22,12
+END
+
+IDD_STARTUPDLG DIALOGEX 0, 0, 246, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏自动更新平台(VC演示版)"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_STARTUPDLG_PROGRESS,"msctls_progress32",WS_BORDER,11,29,223,19
+    LTEXT           "正在从服务器上获取资源列表：",IDC_STARTUPDLG_STATIC,11,12,122,12
+END
+
+IDD_DOWNLOADLISTPAGE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DOWNLOADLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_OWNERDATA | WS_TABSTOP,7,7,72,54
+END
+
+IDD_PREDOWNLOADGENERALPAGE DIALOGEX 0, 0, 276, 257
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "常规"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "存放目录",IDC_STATIC,9,4,257,48
+    EDITTEXT        IDC_GENERAL_SAVEPATH,19,19,211,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_GENERAL_BROWER,237,19,22,12
+    LTEXT           "磁盘分区空间大小：",IDC_STATIC,19,36,73,9
+    CONTROL         "!!!",IDC_GENERAL_DISKSIZE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,97,36,131,9
+    GROUPBOX        "下载内容",IDC_STATIC,9,54,257,200
+    LTEXT           "资源名称：",IDC_STATIC,19,69,46,11
+    CONTROL         "!!!",IDC_GENERAL_NAME,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,74,69,177,11
+    LTEXT           "资源大小：",IDC_STATIC,19,85,46,11
+    CONTROL         "!!!",IDC_GENERAL_SIZE,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,74,85,177,11
+    CONTROL         "",IDC_GENERAL_FILELIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,19,101,236,146
+END
+
+IDD_PREDOWNLOADDLG DIALOGEX 0, 0, 295, 284
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "任务属性"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,74,266,46,12
+    PUSHBUTTON      "取消",IDCANCEL,171,266,46,12
+END
+
+IDD_PREDOWNLOADOTHERPAGE DIALOGEX 0, 0, 276, 257
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "更多信息"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "创建者信息",IDC_STATIC,9,4,257,136
+    LTEXT           "创建者名称：",IDC_STATIC,19,20,49,8
+    EDITTEXT        IDC_OTHER_CREATOR,70,19,186,12,ES_AUTOHSCROLL
+    LTEXT           "备注：",IDC_STATIC,19,38,44,8
+    EDITTEXT        IDC_OTHER_COMMENT,19,52,237,80,ES_MULTILINE | ES_AUTOHSCROLL
+    GROUPBOX        "TRACKER服务器列表",IDC_STATIC,9,145,257,109
+    EDITTEXT        IDC_OTHER_URLLIST,19,157,237,90,ES_MULTILINE | ES_AUTOHSCROLL
+END
+
+IDD_PREDOWNLOADSETUPPAGE DIALOGEX 0, 0, 276, 257
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性设置"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "速率设置",IDC_STATIC,8,7,256,55
+    CONTROL         "最大上传速度：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,22,70,10
+    EDITTEXT        IDC_SETUP_UPLOADLIMIT,108,20,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SETUP_UPLOADLIMIT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,137,21,10,11
+    LTEXT           "KB/s",IDC_STATIC,166,22,50,10
+    CONTROL         "最大下载速度：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,43,70,10
+    EDITTEXT        IDC_SETUP_DOWNLIMIT,108,41,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SETUP_DOWNLIMIT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,137,41,10,11
+    LTEXT           "KB/s",IDC_STATIC,166,43,50,10
+    GROUPBOX        "运行设置",IDC_STATIC,8,67,256,62
+    CONTROL         "下载运行设置：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,86,70,10
+    COMBOBOX        IDC_SETUP_RUNSETUP_COMBO,120,84,82,32,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "下载前预先分配磁盘空间：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,107,100,10
+    CONTROL         "           ",IDC_SETUP_PREALLOC_CHECKBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,120,105,9,12
+END
+
+IDD_PREDELETEDOWNNODEDLG DIALOGEX 0, 0, 248, 187
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "删除下载项目…"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,55,169,50,14
+    PUSHBUTTON      "取消",IDCANCEL,144,169,50,14
+    GROUPBOX        "删除下载项目",IDC_STATIC,6,6,237,158
+    CONTROL         "是否同时将已经下载的文件删除至回收站",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,22,151,10
+    CONTROL         "           ",IDC_DELETEDOWNNODE_DELEFILE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,171,20,9,12
+    CONTROL         "下列项目将被删除：",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,15,38,121,10
+    CONTROL         "",IDC_DELETEDOWNNODE_NODELIST_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,52,219,103
+END
+
+IDD_GENERALOUTPUTPAGE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+IDD_PEERLISTPAGE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+IDD_MAKETORRENTFILEDLG DIALOGEX 0, 0, 320, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Torrent文件制作"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "源选择操作",IDC_STATIC,7,3,306,166
+    CONTROL         "目录还是单个文件：",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,17,17,79,11
+    COMBOBOX        IDC_MKT_DIRORFILE_COMBO,102,15,90,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "目标对象路径：",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,17,35,79,11
+    EDITTEXT        IDC_MKT_PATH_EDIT,102,33,175,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "浏览",IDC_MKT_BRW_BUTTON,281,33,22,12
+    CONTROL         "分块大小：",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,17,55,47,10
+    COMBOBOX        IDC_MKT_PIECESIZE_COMBO,102,52,90,29,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "允许加入公用DHT网络",IDC_MKT_ALLOW_DHT_RADIO,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY | BS_FLAT | WS_GROUP | WS_TABSTOP,17,71,102,13
+    CONTROL         "禁止加入公用DHT网络",IDC_MKT_UNALLOW_DHT_RADIO,"Button",BS_AUTORADIOBUTTON | BS_NOTIFY | BS_FLAT | WS_TABSTOP,160,71,102,13
+    CONTROL         "添加 Tracker服务器地址 . HTTP Seeds地址 . DHT网络节点地址",IDC_MKT_TITLE_STATIC,
+                    "Static",SS_SIMPLE | WS_GROUP,17,88,238,9
+    EDITTEXT        IDC_MKT_URL_LIST_EDIT,17,102,286,60,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "创建者信息",IDC_STATIC,7,171,306,30
+    EDITTEXT        IDC_MKT_CREATOR_EDIT,17,183,286,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "备注信息",IDC_STATIC,7,203,306,70
+    EDITTEXT        IDC_MKT_COMMENT_EDIT,17,215,286,52,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,71,280,50,12
+    PUSHBUTTON      "取消",IDCANCEL,201,280,50,12
+END
+
+IDD_ASYNWAITDLG DIALOGEX 0, 0, 291, 32
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_ASYNWAITDLG_STATIC,"Static",SS_SIMPLE | WS_GROUP,12,12,220,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "KDBits.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "KDBits.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RESLISTPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CONFIGNETWORK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 281
+    END
+
+    IDD_CONFIGDISK, DIALOG
+    BEGIN
+        VERTGUIDE, 175
+        HORZGUIDE, 58
+    END
+
+    IDD_DOWNLOADLISTPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PREDOWNLOADSETUPPAGE, DIALOG
+    BEGIN
+        TOPMARGIN, 1
+    END
+
+    IDD_PREDELETEDOWNNODEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_GENERALOUTPUTPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PEERLISTPAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_MAKETORRENTFILEDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 294
+    END
+
+    IDD_ASYNWAITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 25
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MAKETORRENTFILEDLG DLGINIT
+BEGIN
+    IDC_MKT_DIRORFILE_COMBO, 0x403, 15, 0
+0xbfc4, 0xbcc2, 0xa8a3, 0xe0b6, 0xc4ce, 0xfebc, 0xa9a3, "\000" 
+    IDC_MKT_DIRORFILE_COMBO, 0x403, 9, 0
+0xa5b5, 0xf6b8, 0xc4ce, 0xfebc, "\000" 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 10, 0
+0x3233, 0x2020, 0x2020, 0x4b20, 0x0042, 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 10, 0
+0x3436, 0x2020, 0x2020, 0x4b20, 0x0042, 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 9, 0
+0x3231, 0x2038, 0x2020, 0x424b, "\000" 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 9, 0
+0x3532, 0x2036, 0x2020, 0x424b, "\000" 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 9, 0
+0x3135, 0x2032, 0x2020, 0x424b, "\000" 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 8, 0
+0x3031, 0x3432, 0x4b20, 0x0042, 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 8, 0
+0x3032, 0x3834, 0x4b20, 0x0042, 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 8, 0
+0x3034, 0x3639, 0x4b20, 0x0042, 
+    IDC_MKT_PIECESIZE_COMBO, 0x403, 8, 0
+0x3138, 0x3239, 0x4b20, 0x0042, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_STRING_RES_NAME     "资源名称"
+    IDS_STRING_RES_SIZE     "资源大小"
+    IDS_STRING_RES_TIME     "更新时间"
+    IDS_STRING_RES_RULE     "更新规则"
+    IDS_STRING_RES_STATE    "状态"
+    IDS_STRING_RES_TYPE     "资源类型"
+    IDS_STRING_RES_VER      "版本"
+    IDS_STRING_INSTALL_PATH "目录（文件）路径"
+    IDS_STRING_RULE_AUTOMATIC "自动更新"
+    IDS_STRING_RULE_MANUAL  "手动更新"
+    IDS_STRING_TITLE_NETGAME "网络游戏资源"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "KDBits\n\nKDBits\n\n\nKDBits.Document\nKDBits.Document"
+    IDS_STRING_DOWNLOADLIST_UPEDSIZE "已经上传"
+    IDS_STRING_FILE_NAME    "文件名"
+    IDS_STRING_FILE_SIZE    "文件大小"
+    IDS_STRING_DOWNLOADLIST_HEALTH "健康度"
+    IDS_STRING_DOWNLOADLIST_PEERS "连接数"
+    IDS_STRING_DOWNLOADLIST_SEEDS "种子数"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "KDBits"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_TITLE_LOCALGAME "单机游戏资源"
+    IDS_STRING_TITLE_OTHER  "其他资源"
+    IDS_STRING_APPLICATION_TITLE "游戏自动更新平台(VC演示版)"
+    IDS_STRING_PATH_NETGAME "D:\\NetGame"
+    IDS_STRING_PATH_LOCALGAME "D:\\LocalGame"
+    IDS_STRING_PATH_OTHER   "D:\\Other"
+    IDS_STRING_TITLE_DOWNLOADLIST "下载列表"
+    IDS_STRING_DOWNLOADLIST_NAME "名称"
+    IDS_STRING_DOWNLOADLIST_TYPE "更新方式"
+    IDS_STRING_DOWNLOADLIST_PATH "目录（文件）路径"
+    IDS_STRING_DOWNLOADLIST_STATE "状态"
+    IDS_STRING_DOWNLOADLIST_PROGRESS "进度"
+    IDS_STRING_DOWNLOADLIST_DOWNSPEED "下载速度"
+    IDS_STRING_DOWNLOADLIST_UPSPEED "上传速度"
+    IDS_STRING_DOWNLOADLIST_SIZE "总大小"
+    IDS_STRING_DOWNLOADLIST_DOWNEDSIZE "已经下载"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENU_DOWNLIST_START_TASK "开始下载指定的任务"
+    ID_MENU_DOWNLIST_STOP_TASK "停止下载指定的任务"
+    ID_MENU_DOWNLIST_DELETE_TASK "删除指定的任务"
+    ID_MENU_DOWNLIST_ANNOUNCE_TASK "重新宣布"
+    ID_MENU_DOWNLIST_TORRENT_FILE_SAVE "种子文件另存为"
+    ID_MENU_DOWNLIST_OPEN_DIR "打开指定任务所在的目录"
+    ID_MENU_DOWNLIST_TASK_PROPERTY "显示指定任务的属性"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RES_DOWNLOAD         "下载指定的项目"
+    ID_RES_PROPERTY         "显示指定项目的属性"
+    ID_MAIN_MENU_CONFIG     "系统配置"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MAIN_MENU_START_ALL  "开始全部任务"
+    ID_MAIN_MENU_STOP_ALL   "停止全部任务"
+    ID_MAIN_MENU_DELETE_ALL "删除全部任务"
+    ID_MAIN_MENU_NEW_TASK   "开始一个新任务"
+    ID_MAIN_MENU_LOAD_GAMELIST "重新从互联网加载最新的游戏列表"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\KDBits.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

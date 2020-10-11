@@ -1,0 +1,16 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+libdir=${exec_prefix}/lib
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+sysconfdir=${prefix}/etc
+includedir=${prefix}/include
+package=libtorrent
+
+Name: libtorrent
+Description: Bittorrent library.
+Version: 0.13
+Libs: -L${libdir} -ltorrent
+Libs.private:  -lboost_date_time-mt -lboost_filesystem-mt -lboost_thread-mt   -lssl -lcrypto
+Cflags: -I${includedir} -I${includedir}/libtorrent 
